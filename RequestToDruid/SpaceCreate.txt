@@ -1,0 +1,27 @@
+url: https://app.stud.druid.1t.ru/graphiql?authorization=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI3IiwianRpIjoiYjAyZjIyNmUxMTdlMDVlYWNkNzMzNjM4YTZmMDlmMzljMTU1Yzc1YzM1MTFhNzk3MTg1OTE4NjdkMDU2NTM3NWYyZjYzYmFlMmU1ODDDZTEiLCJpYXQiOjE2Nzk0NzY1NzIuNDU2Mzg2LCJuYmYiOjE2Nzk0NzY1NzIuNDU2Mzg4LCJleHAiOjE3MTEwOTg5NzIuNDQ0MzUxLCJzdWIiOiI5MDA1MTQ2MDg1OTkwOTI0OTUwIiwic2NvcGVzIjpbXX0.CEkoLiT41gA3FOl0hJOrxb7K-caXpSERh0JnmX6MG5e-pbZUBVJK6lxX9qgqE1lcxKPZki1oA40o7-5tCsEVaLInRb8Iu-gMhmmvict4DMcgqvazltRMnX8vw5xIRu5OH-ZhFjqwJUF2uq7uEYwXbqBSl3rRH6ybsbpCmYlpxCy8lU8tA636EUGQlp1HhA2yfn46rd3SN-hfhnryY8MU0WweqckcZMgdA9FOtf9tobVg3OgvK6FJC7McaCMRGdn7lQLE4dWtX0UF8Rj5HZY6GScfsYf3Vp90z0c0xmx5qJkUnYywQviELYBQ4rZBxA-uijJlxDlzLnfJNsSguWM2DW-imaTdzWAesmtxWrdmp7jy7DUU6rBUZIOtoBVNFN_8V98VJQ1oukCVm01kwMmvBjLBOG9QbnCvvJWqZCharNjUpTP8rxx4SIfskKjvkUtP4q4274rx3fX3zy5ScYhT5dMJR-7xPJO-aq2V_6F7DbzIZv-4Mdfc0INwqyfPLuIYJG318_D8X_iNejkXamKF4UIRU1UfgpLl0FcWM-ldxAEo2aATaYN-gKVYW2_rtAgRE0hNE-2ccOrmZaeq-yt-A00BjE7_A8F-aCS2baV2TmYJxBmSj7PGXHUb_ijhFuwEPM05V1M0GLaOgYWyioxhquPnmZCbrG4hpTL657Q8CSc&space=100
+body: mutation SpaceCreate($input: SpaceCreateInput!) {
+        spaceCreate(input: $input) {
+            recordId
+            record {
+              author_id
+      	name
+              description
+      	config
+              created_at
+              updated_at
+            }
+            status
+        }
+      }
+variable: {
+             "input":{
+                "name":"Space for development",
+                "description":"Testing description for Space",
+                "config":{
+                   "customField":"value"
+                }
+             }
+          }
+Headers: {
+           "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ1.eyJhdWQiOiI3IiwianRpIjoiYjAyZjIyNmUxMTdlMDVlYWNkNzMzNjM4YTZmMDlmMzljMTU1Yzc1YzM1MTFhNzk3MTg1OTE4NjdkMDU2NTM3NWYyZjYzYmFlMmU1OWM3ZTEiLCJpYXQiOjE2Nzk0NzY1NzIuNDU2Mzg2LCJuYmYiOjE2Nzk0NzY1NzIuNDU2Mzg4LCJleHAiOjE3MTEwOTg5NzIuNDQ0MzUxLCJzdWIiOiI5MDA1MTQ2MDg1OTkwOTI0OTUwIiwic2NvcGVzIjpbXX0.CEkoLiT41gA3FOl0hJOrxb7K-caXpSERh0JnmX6MG5e-pbZUBVJK6lxX9qgqE1lcxKPZki1oA40o7-5tCsEVaLInRb8Iu-gMhmmvict4DMcgqvazltRMnX8vw5xIRu5OH-ZhFjqwJUF2uq7uEYwXbqBSl3rRH6ybsbpCmYlpxCy8lU8tA636EUGQlp1HhA2yfn46rd3SN-hfhnryY8MU0WweqckcZMgdA9FOtf9tobVg3OgvK6FJC7McaCMRGdn7lQLE4dWtX0UF8Rj5HZY6GScfsYf3Vp90z0c0xmx5qJkUnYywQviELYBQ4rZBxA-uijJlxDlzLnfJNsSguWM2DW-imaTdzWAesmtxWrdmp7jy7DUU6rBUZIOtoBVNFN_8V98VJQ1oukCVm01kwMmvBjLBOG9QbnCvvJWqZCharNjUpTP8rxx4SIfskKjvkUtP4q4274rx3fX3zy5ScYhT5dMJR-7xPJO-aq2V_6F7DbzIZv-4Mdfc0INwqyfPLuIYJG318_D8X_iNejkXamKF4UIRU1UfgpLl0FcWM-ldxAEo2aATaYN-gKVYW2_rtAgRE0hNE-2ccOrmZaeq-yt-A00BjE7_A8F-aCS2baV2TmYJxBmSj7PGXHUb_ijhFuwEPM04V1M0GLaOgYWyioxhquPnmZCbrG4hpTL657Q8CSc"
+         }
