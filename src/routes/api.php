@@ -13,3 +13,8 @@ Route::get('/getParentIdForCreatePage', [UnionController::class, 'getParentIdFor
 Route::post('/createPage', [UnionController::class, 'createPage'])->name('create.page');
 Route::post('/manyPermissionRulesMutation', [UnionController::class, 'manyPermissionRulesMutation'])->name('many.permission.rules.mutation');
 Route::post('/kanbanCreate', [UnionController::class, 'kanbanCreate'])->name('kanban.create');
+
+Route::post('/tableCreate', [UnionController::class, 'tableCreate'])->name('table.create');
+Route::post('/createNewType', [UnionController::class, 'createNewType'])->name('new.type.create');
+Route::post('/createEvent', [UnionController::class, 'createEvent'])->name('event.create');
+Route::post('/addText', [UnionController::class, 'addText'])->name('add.text');

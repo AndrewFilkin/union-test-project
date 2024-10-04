@@ -33,6 +33,7 @@ class LoginService
                 'input' => [
                     'login' => $data['login'],
                     'password' => $data['password'],
+                    'locale' => 'ru',
                 ]
             ],
         ]);
